@@ -1,5 +1,5 @@
 {
-  "name": "react-validated-form",
+  "name": "react-validate.js",
   "version": "0.1.0",
   "description": "React form component validated with validate.js",
   "main": "./dist/index.js",
@@ -30,6 +30,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/JavoByte/react-validated-form"
+    "url": "https://github.com/JavoByte/react-validate.js"
   }
 }

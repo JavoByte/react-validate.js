@@ -8,22 +8,22 @@ React `Form` component to automatically validate with [validate.js](https://vali
 With `npm`
 
 ```bash
-npm install --save react-validated-form
+npm install --save react-validate.js
 ```
 
 Or with `yarn`
 
 ```bash
-yarn andd react-validated
+yarn add react-validate.jd
 
 ## Usage
 
-`react-validated-form` provides 2 components: `Form` and `Input`. Each is intended to substitute `form` and `input` components, so you can pass the `props` you usually do.
+`react-validate.js` provides 2 components: `Form` and `Input`. Each is intended to substitute `form` and `input` components, so you can pass the `props` you usually do.
 
 To start validating, pass `constraints` prop to `Form`. Each validated item should have a matching `Input` with that name. For example, if you want to validate an `email`:
 
 ```javascript
-import Form from 'react-validated-form';
+import Form from 'react-validate.js';
 
 function Example() {
   return (
