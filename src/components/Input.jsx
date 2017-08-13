@@ -130,8 +130,10 @@ class Input extends React.Component {
     event.persist();
     let value = event.target.value;
     if (this.props.onChange) {
-      // We need that, if Input overrides onChange, it returns the value.
-      value = this.props.onChange(event);
+      const optValue = this.props.onChange(event);
+      if (optValue !== undefined) {
+        value = optValue;
+      }
     }
     if (event.target.type === 'checkbox' || event.target.type === 'radio') {
       value = event.target.checked ? this.props.value : undefined;
