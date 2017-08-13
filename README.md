@@ -14,7 +14,8 @@ npm install --save react-validate.js
 Or with `yarn`
 
 ```bash
-yarn add react-validate.jd
+yarn add react-validate.js
+```
 
 ## Usage
 
@@ -48,7 +49,7 @@ To get the validation errors, pass a `onErrorsChanged` function. This function w
 
 ```json
 {
-  email: ["Email can't be blank"],
+  "email": ["Email can't be blank"],
 }
 ```
 
