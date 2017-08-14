@@ -87,7 +87,7 @@ class Form extends React.Component {
   validateField(field) {
     const { constraints, onErrorsChanged } = this.props;
     const values = this.state.input;
-    const allErrors = validate(values, constraints);
+    const allErrors = validate(values, constraints) || {};
     const errors = allErrors[field];
     if (errors) {
       this.setState(prevState => ({
