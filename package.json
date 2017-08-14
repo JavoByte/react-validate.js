@@ -1,6 +1,6 @@
 {
   "name": "react-validate.js",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "React form component validated with validate.js",
   "main": "./dist/index.js",
   "scripts": {
