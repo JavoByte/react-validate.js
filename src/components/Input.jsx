@@ -100,6 +100,9 @@ class Input extends React.Component {
               if (this.context.registerValue) {
                 this.context.registerValue(this.props.name, value);
               }
+              if (this.props.onChange) {
+                this.props.onChange(value);
+              }
             });
           });
         }
@@ -130,9 +133,13 @@ class Input extends React.Component {
     event.persist();
     let value = event.target.value;
     if (this.props.onChange) {
-      const optValue = this.props.onChange(event);
-      if (optValue !== undefined) {
-        value = optValue;
+      if (['select', 'radio', 'checkbox'].indexOf(this.props.type) === -1) {
+        const optValue = this.props.onChange(event);
+        if (optValue !== undefined) {
+          value = optValue;
+        }
+      } else {
+        this.props.onChange(value);
       }
     }
     if (event.target.type === 'checkbox' || event.target.type === 'radio') {
